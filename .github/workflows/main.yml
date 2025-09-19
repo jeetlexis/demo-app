@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest  # Run on Ubuntu
 
     steps:
-      - run: "curl --location --fail-early --request POST https://technoprism.demo.appsmith.com/api/v1/git/applications/68ca68aaeeeec16c9247056e/deploy?refName=master --header 'Authorization: Bearer <bearer token>'"
+      - run: "curl --location --fail-early --request POST https://technoprism.demo.appsmith.com/api/v1/git/applications/68ca68aaeeeec16c9247056e/deploy?refName=master --header 'Authorization: Bearer ${{ secrets.APPSMITH_CD_KEY }}'"
