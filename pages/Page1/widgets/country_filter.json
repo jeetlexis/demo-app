@@ -1,0 +1,70 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 9,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "optionLabel"
+    },
+    {
+      "key": "optionValue"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "7sm8lurke0",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "country Filter",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{Get_user_data.run();\nonload.getGenderRatio();}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 14.234375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 22,
+  "serverSideFiltering": false,
+  "sourceData": "{{Utils.getCountryOptions()}}",
+  "topRow": 3,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "wpghckoqxb",
+  "widgetName": "country_filter"
+}

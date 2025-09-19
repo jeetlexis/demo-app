@@ -1,0 +1,6 @@
+UPDATE public."users" SET
+    "phone" = '{{userData.formData.phone}}',
+    "email" = '{{userData.formData.email}}',
+    "country" = '{{userData.formData.country}}',
+    "name" = '{{userData.formData.name}}'
+  WHERE id = {{User_Table.selectedRow.id}};

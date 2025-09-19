@@ -1,0 +1,1 @@
+SELECT * FROM public."users" WHERE country ILIKE {{'%' + country_filter.selectedOptionValue }} OFFSET {{User_Table.pageOffset}}LIMIT {{User_Table.pageSize}};
